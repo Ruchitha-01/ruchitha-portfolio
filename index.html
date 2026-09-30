@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruchitha R | Software Developer & ML Enthusiast</title>
+  <meta name="description" content="Personal portfolio of Ruchitha R - Aspiring Software Developer specializing in Web Development, Machine Learning, and Database Technologies." />
+  <meta name="keywords" content="Ruchitha R, Software Developer, Machine Learning, Web Development, Portfolio, Python, Flask, Django, MySQL" />
+  <meta name="author" content="Ruchitha R" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+
+  <!-- Background Decorative Glowing Elements -->
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
+  <div class="glow-blob blob-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="logo__bracket">&lt;</span>Ruchitha <span class="logo__accent">R</span><span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Mobile Toggle Button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="hero__container container grid">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="badge__dot"></span> Available for Opportunities
+          </div>
+          <h1 class="hero__title">
+            Hi, I'm <span class="gradient-text">Ruchitha R</span>
+          </h1>
+          <h2 class="hero__subtitle">
+            I am an <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+          <p class="hero__description">
+            Passionate and motivated aspiring software developer with a strong focus on building user-friendly web applications, intelligent machine learning systems, and robust database architectures.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">
+              <i class="fa-solid fa-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn--secondary">
+              <i class="fa-regular fa-paper-plane"></i> Get in Touch
+            </a>
+          </div>
+
+          <div class="hero__social">
+            <span class="social__label">Connect with me:</span>
+            <div class="social__links">
+              <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" class="social__link" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ruchitha-r-3286a1352" target="_blank" rel="noopener noreferrer" class="social__link" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:rruchitha0104@gmail.com" class="social__link" title="Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__image-card">
+            <div class="image-glass-frame">
+              <img src="assets/profile.jpg" alt="Ruchitha R" class="hero__img" />
+            </div>
+            <div class="floating-badge badge--exp">
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <span class="badge__title">ML & Web Dev</span>
+                <span class="badge__subtitle">Full-Stack Explorer</span>
+              </div>
+            </div>
+            <div class="floating-badge badge--edu">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span class="badge__title">MCA Student</span>
+                <span class="badge__subtitle">BCA (9.13 CGPA)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get to know me</span>
+          <h2 class="section__title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about__container grid">
+          <div class="about__glass-card">
+            <div class="about__header-bar">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">ruchitha_profile.py</span>
+            </div>
+            <div class="about__content">
+              <p class="about__text">
+                Hello! I’m <strong>Ruchitha R</strong>, a passionate and motivated <strong>aspiring software developer</strong> with a strong interest in web development, machine learning, and database technologies.
+              </p>
+              <p class="about__text">
+                I enjoy creating practical and user-friendly applications while continuously improving my programming and problem-solving skills. I have experience working with <strong>Python, Flask, Java, PHP, MySQL, HTML, CSS, JavaScript, and Machine Learning</strong>.
+              </p>
+              <p class="about__text">
+                I have worked on projects such as a <strong>Synovial Sarcoma Detection System</strong> using Deep Learning, a <strong>Diabetes Risk Prediction System</strong> using Machine Learning (achieving 88% accuracy), and comprehensive <strong>Weather Data Analysis</strong>.
+              </p>
+              <p class="about__text highlight-quote">
+                <i class="fa-solid fa-quote-left"></i> I’m driven by curiosity, creativity, and a commitment to continuous growth. I aim to transform ideas into impactful solutions, embrace every opportunity to learn, and build technology that makes a meaningful difference.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__highlights grid">
+            <div class="highlight__card glass-card">
+              <div class="highlight__icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Web Development</h3>
+              <p>Building responsive, dynamic applications with Flask, Django, PHP, HTML5, CSS3, and JavaScript.</p>
+            </div>
+            <div class="highlight__card glass-card">
+              <div class="highlight__icon"><i class="fa-solid fa-robot"></i></div>
+              <h3>Machine Learning & AI</h3>
+              <p>Developing predictive models and deep learning CNN classifiers using Scikit-learn, TensorFlow & OpenCV.</p>
+            </div>
+            <div class="highlight__card glass-card">
+              <div class="highlight__icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Database Architecture</h3>
+              <p>Designing relational database systems with MySQL, SQL, and SQLAlchemy integration.</p>
+            </div>
+            <div class="highlight__card glass-card">
+              <div class="highlight__icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <h3>Problem Solving</h3>
+              <p>Strong foundation in Object-Oriented Programming (OOP) and Data Structures & Algorithms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Academic Journey</span>
+          <h2 class="section__title">My <span class="gradient-text">Education</span></h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: MCA -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card glass-card">
+              <div class="timeline__meta">
+                <span class="timeline__badge current">2025 – 2027 (Pursuing)</span>
+                <span class="timeline__degree">Post Graduation</span>
+              </div>
+              <h3 class="timeline__title">Master of Computer Applications (MCA)</h3>
+              <h4 class="timeline__institution">
+                <i class="fa-solid fa-building-columns"></i> Maharaja Institute Of Technology, Mysore
+              </h4>
+              <p class="timeline__desc">
+                Advanced studies in software architecture, distributed systems, enterprise software development, and modern machine learning technologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: BCA -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card glass-card">
+              <div class="timeline__meta">
+                <span class="timeline__badge score">CGPA: 9.13 / 10.0</span>
+                <span class="timeline__degree">2022 – 2025</span>
+              </div>
+              <h3 class="timeline__title">Bachelor of Computer Applications (BCA)</h3>
+              <h4 class="timeline__institution">
+                <i class="fa-solid fa-building-columns"></i> ST. Joseph's First Grade College, Hunsur (University of Mysore)
+              </h4>
+              <p class="timeline__desc">
+                Graduated with distinction with high academic standing. Comprehensive coursework in Data Structures, Java, Python, Database Management Systems, Web Technologies, and Software Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: PU -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card glass-card">
+              <div class="timeline__meta">
+                <span class="timeline__badge score">Score: 92%</span>
+                <span class="timeline__degree">2020 – 2022</span>
+              </div>
+              <h3 class="timeline__title">Pre-University (PUC) - Commerce (EBAC)</h3>
+              <h4 class="timeline__institution">
+                <i class="fa-solid fa-school"></i> ST. Joseph's Pre-University College, Hunsur
+              </h4>
+              <p class="timeline__desc">
+                Economics, Business Studies, Accountancy, and Computer Science. Completed with a standout 92% score.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: SSLC -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card glass-card">
+              <div class="timeline__meta">
+                <span class="timeline__badge score">Score: 80%</span>
+                <span class="timeline__degree">Completed in 2020</span>
+              </div>
+              <h3 class="timeline__title">Secondary School Leaving Certificate (SSLC)</h3>
+              <h4 class="timeline__institution">
+                <i class="fa-solid fa-school"></i> Adarsha Vidyalaya, Hunsur
+              </h4>
+              <p class="timeline__desc">
+                Strong foundation in Mathematics, Science, and Information Technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Technical Expertise</span>
+          <h2 class="section__title">Skills & <span class="gradient-text">Competencies</span></h2>
+        </div>
+
+        <div class="skills__grid grid">
+          <!-- Programming Languages -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill__tag"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill__tag"><i class="fa-brands fa-php"></i> PHP</span>
+              <span class="skill__tag"><i class="fa-solid fa-c"></i> C</span>
+              <span class="skill__tag"><i class="fa-solid fa-hashtag"></i> C#</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Web Tech -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h3>Frameworks & Web Tech</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-solid fa-flask"></i> Flask</span>
+              <span class="skill__tag"><i class="fa-solid fa-feather"></i> Django</span>
+              <span class="skill__tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="skill__tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="skill__tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Machine Learning & Data -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Machine Learning & Data</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-solid fa-microchip"></i> TensorFlow / Keras</span>
+              <span class="skill__tag"><i class="fa-solid fa-eye"></i> OpenCV</span>
+              <span class="skill__tag"><i class="fa-solid fa-chart-line"></i> Scikit-learn</span>
+              <span class="skill__tag"><i class="fa-solid fa-table"></i> Pandas</span>
+              <span class="skill__tag"><i class="fa-solid fa-calculator"></i> NumPy</span>
+              <span class="skill__tag"><i class="fa-solid fa-tree"></i> Random Forest</span>
+              <span class="skill__tag"><i class="fa-solid fa-chart-pie"></i> Data Analysis</span>
+            </div>
+          </div>
+
+          <!-- Database Technologies -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Database Technologies</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-solid fa-server"></i> MySQL</span>
+              <span class="skill__tag"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="skill__tag"><i class="fa-solid fa-link"></i> SQLAlchemy</span>
+              <span class="skill__tag"><i class="fa-solid fa-table-cells"></i> Relational Modeling</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill__tag"><i class="fa-brands fa-github"></i> GitHub</span>
+              <span class="skill__tag"><i class="fa-solid fa-code"></i> VS Code</span>
+              <span class="skill__tag"><i class="fa-solid fa-cube"></i> NetBeans</span>
+              <span class="skill__tag"><i class="fa-solid fa-gears"></i> MySQL Workbench</span>
+              <span class="skill__tag"><i class="fa-solid fa-network-wired"></i> XAMPP</span>
+            </div>
+          </div>
+
+          <!-- Core Concepts & Soft Skills -->
+          <div class="skill__group glass-card">
+            <div class="skill__group-header">
+              <div class="skill__group-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <h3>Core Concepts & Soft Skills</h3>
+            </div>
+            <div class="skill__tags">
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Problem Solving</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Object-Oriented Programming (OOP)</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Data Structures & Algorithms</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Database Management</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Web Development</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Debugging</span>
+              <span class="skill__tag"><i class="fa-solid fa-check"></i> Continuous Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Recent Creations</span>
+          <h2 class="section__title">Featured <span class="gradient-text">Projects</span></h2>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project__filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">Deep Learning & AI</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="data">Data Analysis</button>
+        </div>
+
+        <div class="projects__grid grid">
+          <!-- Project 1 -->
+          <div class="project__card glass-card" data-category="ai">
+            <div class="project__image-container">
+              <div class="project__preview preview--ai">
+                <i class="fa-solid fa-dna project__hero-icon"></i>
+                <span class="project__type-tag">Deep Learning / Healthcare</span>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Synovial Sarcoma Detection Using Deep Learning</h3>
+              <p class="project__description">
+                Developed an AI-powered web application for detecting Synovial Sarcoma from histopathological images using Convolutional Neural Networks (CNN) with high classification confidence.
+              </p>
+              <div class="project__tech-stack">
+                <span>Python</span>
+                <span>TensorFlow/Keras</span>
+                <span>OpenCV</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>HTML/CSS/JS</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--outline">
+                  <i class="fa-brands fa-github"></i> View Source
+                </a>
+                <a href="#contact" class="btn btn--small btn--primary">
+                  <i class="fa-solid fa-circle-info"></i> Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project__card glass-card" data-category="ml">
+            <div class="project__image-container">
+              <div class="project__preview preview--ml">
+                <i class="fa-solid fa-heart-pulse project__hero-icon"></i>
+                <span class="project__type-tag">Machine Learning / Prediction</span>
+              </div>
+            </div>
+            <div class="project__content">
+              <div class="project__badge-metric">
+                <i class="fa-solid fa-bullseye"></i> 88% Accuracy
+              </div>
+              <h3 class="project__title">Diabetes Detection Using Machine Learning</h3>
+              <p class="project__description">
+                Built comparative machine learning models using Logistic Regression, SVM, and Random Forest to predict diabetes risk accurately. Integrated with a Flask web application and MySQL database.
+              </p>
+              <div class="project__tech-stack">
+                <span>Python</span>
+                <span>Scikit-learn</span>
+                <span>Random Forest</span>
+                <span>SVM</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--outline">
+                  <i class="fa-brands fa-github"></i> View Source
+                </a>
+                <a href="#contact" class="btn btn--small btn--primary">
+                  <i class="fa-solid fa-circle-info"></i> Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project__card glass-card" data-category="data">
+            <div class="project__image-container">
+              <div class="project__preview preview--data">
+                <i class="fa-solid fa-cloud-sun-rain project__hero-icon"></i>
+                <span class="project__type-tag">Data Science & Visualization</span>
+              </div>
+            </div>
+            <div class="project__content">
+              <h3 class="project__title">Weather Data Analysis & Seasonal Trends</h3>
+              <p class="project__description">
+                Developed a weather analytics system to study seasonal patterns and atmospheric conditions using historical climate data with extensive data preprocessing, feature engineering, and visualizations.
+              </p>
+              <div class="project__tech-stack">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>Scikit-learn</span>
+                <span>Flask</span>
+              </div>
+              <div class="project__links">
+                <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--outline">
+                  <i class="fa-brands fa-github"></i> View Source
+                </a>
+                <a href="#contact" class="btn btn--small btn--primary">
+                  <i class="fa-solid fa-circle-info"></i> Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Continuous Learning</span>
+          <h2 class="section__title">Certifications & <span class="gradient-text">Achievements</span></h2>
+        </div>
+
+        <div class="certifications__grid grid">
+          <!-- Coursera -->
+          <div class="cert__card glass-card">
+            <div class="cert__icon coursera"><i class="fa-solid fa-award"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">Coursera</span>
+              <h4 class="cert__name">Python for Everybody Specialization</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon coursera"><i class="fa-solid fa-award"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">Coursera</span>
+              <h4 class="cert__name">Data Structures and Algorithms</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon coursera"><i class="fa-solid fa-award"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">Coursera</span>
+              <h4 class="cert__name">SQL for Data Science</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon coursera"><i class="fa-solid fa-award"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">Coursera</span>
+              <h4 class="cert__name">Web Development with HTML, CSS, and JavaScript</h4>
+            </div>
+          </div>
+
+          <!-- ExcelR -->
+          <div class="cert__card glass-card">
+            <div class="cert__icon excelr"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">ExcelR</span>
+              <h4 class="cert__name">Artificial Intelligence and Machine Learning</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon excelr"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">ExcelR</span>
+              <h4 class="cert__name">Data Analytics using Python</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon excelr"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">ExcelR</span>
+              <h4 class="cert__name">Full Stack Web Development</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon excelr"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">ExcelR</span>
+              <h4 class="cert__name">Full DSA with Java</h4>
+            </div>
+          </div>
+
+          <div class="cert__card glass-card">
+            <div class="cert__icon excelr"><i class="fa-solid fa-certificate"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">ExcelR</span>
+              <h4 class="cert__name">Full Cyber Security</h4>
+            </div>
+          </div>
+
+          <!-- NPTEL -->
+          <div class="cert__card glass-card">
+            <div class="cert__icon nptel"><i class="fa-solid fa-medal"></i></div>
+            <div class="cert__info">
+              <span class="cert__issuer">NPTEL</span>
+              <h4 class="cert__name">Data Mining</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get in Touch</span>
+          <h2 class="section__title">Contact <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="contact__container grid">
+          <!-- Info Column -->
+          <div class="contact__info">
+            <h3 class="contact__info-title">Let's connect & collaborate!</h3>
+            <p class="contact__info-text">
+              I am actively seeking software development and machine learning opportunities. Feel free to reach out directly through email or connect with me on social platforms.
+            </p>
+
+            <div class="contact__cards">
+              <a href="mailto:rruchitha0104@gmail.com" class="contact__card glass-card">
+                <div class="contact__icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <span class="contact__label">Email Me</span>
+                  <h4 class="contact__value">rruchitha0104@gmail.com</h4>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/ruchitha-r-3286a1352" target="_blank" rel="noopener noreferrer" class="contact__card glass-card">
+                <div class="contact__icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div>
+                  <span class="contact__label">LinkedIn Profile</span>
+                  <h4 class="contact__value">Ruchitha R</h4>
+                </div>
+              </a>
+
+              <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" class="contact__card glass-card">
+                <div class="contact__icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <span class="contact__label">GitHub Profile</span>
+                  <h4 class="contact__value">Ruchitha-01</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact__form-card glass-card">
+            <h3 class="form__title">Send a Quick Message</h3>
+            <form id="contact-form" class="contact__form">
+              <div class="form__group">
+                <label for="name" class="form__label">Your Name</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="e.g. Alex Smith" required />
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Your Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="e.g. alex@example.com" required />
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form__input" placeholder="e.g. Project Opportunity / Collaboration" required />
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea id="message" name="message" rows="5" class="form__input form__textarea" placeholder="Hello Ruchitha, I'd like to talk about..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">
+                <i class="fa-regular fa-paper-plane"></i> Send Message
+              </button>
+              <p class="form__status" id="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="logo__bracket">&lt;</span>Ruchitha <span class="logo__accent">R</span><span class="logo__bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Aspiring Software Developer passionate about creating meaningful technology solutions.</p>
+      </div>
+
+      <div class="footer__socials">
+        <a href="https://github.com/Ruchitha-01" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ruchitha-r-3286a1352" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:rruchitha0104@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+      <div class="footer__copy">
+        <p>&copy; <span id="current-year"></span> Ruchitha R. All rights reserved.</p>
+        <p class="footer__subtext">Built with HTML5, CSS3, & Modern JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#home" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
